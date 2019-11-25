@@ -1,0 +1,11 @@
+"year","state","sex","births"
+1984,"AK","boy",1
+1992,"AK","boy",1
+1993,"AK","boy",7
+1985,"AL","boy",6
+2006,"AL","boy",1
+1984,"AK","boy",2
+1992,"AK","girl",2
+1993,"AK","girl",4
+1985,"AL","girl",4
+2006,"AL","girl",3
