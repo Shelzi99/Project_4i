@@ -18,7 +18,8 @@ def check_if_state_in_dict2():
     else:
         return False
 
-# Creating a dictionary with the states and the no. of births in each state between the years 1986-2006:
+# Creating two dictionaries: (1) country and the no. of births in each state between the years 1986-2006
+# (2) No. of boys and girtls in each country:
 def accumilate_births_per_state():
     with open('births1.xls', 'r') as data_dict:
         # Ignore first line in the file since it has headers - by reading the the first line and after starting the 'for' loop:
@@ -36,7 +37,7 @@ def accumilate_births_per_state():
             temp_births_boy = 0
             temp_births_girl = 0
 
-            # Creating a dictionary with the no. of births in each country between 1986-2006:
+            # Creating a dictionary I - no. of births in each country between 1986-2006:
             if int(year_of_birth) >= 1986 and int(year_of_birth) <= 2006:
 
                 if check_if_state_in_dict():
@@ -45,7 +46,7 @@ def accumilate_births_per_state():
                 else:
                     birth_in_each_state[temp_state] = temp_births
 
-            # Creating another dictionary including each country and no. of boys and girls:
+            # Creating dictionary II - including each country and no. of boys and girls:
             if sex == '"boy"':
                 if check_if_state_in_dict2():
                     # Accumulating  no. of 'boy' births in that country:
